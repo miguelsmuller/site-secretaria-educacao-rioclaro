@@ -1,97 +1,75 @@
-# **SME-SITE**
-> Site da Secretaria Municipal de Educação do Município de Rio Claro -  Site da Secretaria Municipal de Educação do Município de Rio Claro - Site da Secretaria Municipal de Educação do Município de Rio Claro - Site da Secretaria Municipal de Educação do Município de Rio Claro - Site da Secretaria Municipal de Educação do Município de Rio Claro - Site da Secretaria Municipal de Educação do Município de Rio Claro - Site da Secretaria Municipal de Educação do Município de Rio Claro - Site da Secretaria Municipal de Educação do Município de Rio Claro
+# **Site - Secretaria de Educação de Rio Claro**
+![Code quality](https://img.shields.io/scrutinizer/quality/g/miguelsmuller/site-sme-rc/master?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/miguelsmuller/site-sme-rc?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/miguelsmuller/site-sme-rc?style=flat-square)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/site-sme-rc/master?style=flat-square)
 
-**Versão Estável:** 1.3.0  
-**Licensa:** Proprietário - Usu Privado  
-Todos os direitos reservados.  
-É estritamente proibida a cópia não autorizada de qualquer arquivo deste projeto, por qualquer meio.  
+## **Overview**
+- Feature 1
+- Feature 2
+- Feature 3
+- [Need to be listed]
 
-## **Angular Framework**
- [**`Angular`**](https://angular.io/) é uma plataforma e framework para construção da interface de aplicações usando HTML, CSS e, principalmente, JavaScript, criada pelos desenvolvedores da Google.  
-Ele possui alguns elementos básicos que tornam essa construção interessante.  
-Dentre os principais, podemos destacar os componentes, templates, diretivas, roteamento, módulos, serviços, injeção de dependências e ferramentas de infraestrutura que automatizam tarefas, como a de executar os testes unitários de uma aplicação.  
+| <a href="https://miguelsmuller.github.io/site-sme-rc/" target="_blank">Visit Demonstration</a>|
+|:---------------------------------------------------------------------------------------------:|
 
-- **Angular** - *Version: 9.0*
+<br/>
+  
+## **Project Requirements**  
+Make sure that you also have **[NodeJS](https://nodejs.org/)** and **[NPM](https://www.npmjs.com/)** installed on your computer.
+- `$ node --version` and `$ npm --version`
 
-## **Usando o projeto localmente**
-- **Rodando localmente**  
-```shell
-ionic serve --lab --external
-```  
-- A flag `--lab` permite a vizualização multiplataforma no navegador
-- A flag `--external` é para que a aplicação esteja disponivel para acesso dentro da rede internal
+Also make sure you have **Angular CLI** and **Firebase CLI** installed globally on your machine.  
+- `$ npm install -g @angular/cli firebase-tools`
 
+Install dependencies of project with:  
+- `$ npm install`
 
+#### **First run - Environment files**  
+In the first execution of the project, it is **essential** to create the environment files (`environment.ts` and `environment.prod.ts`) in _**/src/environments**_ according to the model that follows inside the folder (`environment.example.ts`).
 
-## **Git Workflow**  
-Esse fluxo de trabalho usa duas branchs principais para registrar o histórico do projeto. O branch **`master`** armazena o histórico oficial de releases, e o branch **`develop`** serve como um ramo de integração de recursos.
+<br/>
 
-O branch **`master`** é o branch que roda no ambiente de produção. Todos os commits no branch **`master`** devem possuir um número de versão.
-
-Cada novo recurso deve residir em sua própria branch e devem partir do branch **`develop`**. Quando um recurso é concluído, ele é mesclado novamente no **`develop`**. Os recursos nunca devem  interagir diretamente com o mestre.
-
-O branch **`develop`** é o branch que roda no ambiente de teste. Ele armazena as últimas funcionalidades incluídas no projetos e que ainda não estão aptas a entrarem no branch **`master`**.
-
-
-
-## **Enviado atualizações**
-1. [Clone o repositório!](https://help.github.com/articles/fork-a-repo/)
-2. [Sincronize](https://help.github.com/articles/syncing-a-fork/) seu fork com a última versão
-3. Crie uma branch para sua funcionalidade: `git checkout -b feature-123`
-4. Commit suas alterações: `git commit -m 'Commit message'`
-5. Envie as alterações pra sua branch: `git push origin feature-123`
-6. [Envie sua pull request](https://help.github.com/articles/using-pull-requests/)
-
-
-## **Precauções de contribuição**  
-Antes de enviar sua colaboração verifique seu código e as conveções adotadas no projeto e tome as seguintes providências:  
-
-- **Sempre verifique a branch que está sendo usada**  
-```shell
-git status
+## **Project Structure**  
+```
+src/                         project source code
+|- app/                      app components
+|  |- app.component.*        app root component (shell)
+|  |- app.module.ts          app root module definition
+|  |- app-routing.module.ts  app routes
+|  +- ...                    additional modules and components
+|- assets/                   app assets (images, fonts, sounds...)
+|- environments/             values for various build environments
+|- theme/                    app global scss variables and theme
+|- index.html                html entry point
+|- main.scss                 global style entry point
+|- main.ts                   app entry point
 ```
 
-- **Faça uma atualização prévia do seu chechout**  
-```shell
-git pull
-```
+<br/>
 
-- **Veja as diferenças antes de commitar**  
-```shell
-git diff --cached
-```
+## **Workflow**  
+**[WORKFLOW.md](WORKFLOW.md)** - This project uses the workflow pattern called `git flow`.
+- [Atlassian - Comparing Workflows](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
+- [Difference between workflows](https://www.zup.com.br/blog/git-workflow)
+- [Girflow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
 
-- **Não commite antes de rodar o projeto localmente**
-- **Veja as mudanças implementadas sendo executadas**  
-- **E principalmente tenha certeza que essas alterações funcionam**  
-- **[Comandos úteis do git](https://gist.github.com/leocomelli/2545add34e4fec21ec16)**
+<br/>
+
+## **Tests**  
+[Need to be implemented]
+
+<br/>
+
+## **Deploy**  
+**[GITHUB ACTIONS](https://github.com/miguelsmuller/site-sme-rc/actions/workflows/push-to-gh-pages.yml)** - To deploy to a demonstration of project hosted in GitHub Pages.
+
+<br/>
+
+## **Contributing**  
+**[CONTRIBUTING.md](CONTRIBUTING.md)** - Specifications of how the contribution should be submitted
+
+<br/>
 
 ## **Changelog**  
-
-= **1.3.0 - 18/11/2020** =  
-Ajustes para permitir exibição pública do projeto no GitHub
-
-= **1.2.3 - 26/10/2020** =  
-Alteração do Endereço da Sede da Secretaria
-Inclusão da ação "Fale Conosco" e remoção de outras
-
-= **1.2.2 - 27/07/2020** =  
-Correção do Título da notícia
-
-= **1.2.1 - 27/07/2020** =  
-Nova Feature com números/estatísticas
-Atualização do Rodapé
-Mudança posição da metatags
-
-= **1.2.0 - 01/07/2020** =  
-Melhoria de SEO e desempenho
-Inserção do Google Analytics
-Correão de Bugs  
-
-= **1.1.0 - 15/06/2020** =  
-Remoção de depências
-Correção do formulário de contato 
-Correção da istagem de notícias  
-
-= **1.0.0 - 14/06/2020** =  
-Projeto Inicial  
+**[CHANGELOG.md](CHANGELOG.md)** - Chronologically list of changes for each version of a project

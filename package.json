@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --aot --build-optimizer --vendor-chunk --source-map=false",
+    "build": "ng build --build-optimizer --vendor-chunk --source-map=false",
+    "build:local": "ng build --aot --prod --build-optimizer --vendor-chunk --source-map=false",
+    "build:prod": "ng build --aot --prod --build-optimizer --vendor-chunk --source-map=false --deploy-url=https://miguelsmuller.github.io/site-sme-rc/ --base-href=/site-sme-rc/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install"
   },
   "private": true,
   "dependencies": {
