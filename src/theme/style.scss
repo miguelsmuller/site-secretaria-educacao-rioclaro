@@ -1,12 +1,12 @@
-@import "./theme/generic/variables";
-@import "./theme/generic/mixins";
-@import "./theme/generic/includes";
-@import "./theme/generic/base";
+@import "./generic/variables";
+@import "./generic/mixins";
+@import "./generic/includes";
+@import "./generic/base";
 
-@import "./theme/structure/header";
-@import "./theme/structure/footer";
+@import "./structure/header";
+@import "./structure/footer";
 
-@import "./theme/elements/list-group";
-@import "./theme/elements/card";
-@import "./theme/elements/dialog";
-@import "./theme/elements/button";
+@import "./elements/list-group";
+@import "./elements/card";
+@import "./elements/dialog";
+@import "./elements/button";

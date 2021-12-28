@@ -1,5 +1,8 @@
 # **CHANGELOG**  
   
+= **1.4.0 - 27/12/2021** =  
+update angular to v11
+
 = **1.3.1 - 27/12/2021** =  
 Workflow com GitHub Actions
 Nova Feature com GitHub Pages

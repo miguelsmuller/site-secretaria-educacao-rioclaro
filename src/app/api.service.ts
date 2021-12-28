@@ -28,7 +28,7 @@ export class Api {
     const httpUrl = `${this.apiNewsOptions.url}/posts`;
 
     let  httpParams = new HttpParams();
-    httpParams = httpParams.append('tags', '75');
+    httpParams = httpParams.append('categories', '26');
     httpParams = httpParams.append('per_page', '6');
     httpParams = httpParams.append('_fields', 'title, link, date');
 
