@@ -3,14 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --build-optimizer --vendor-chunk --source-map=false",
-    "build:local": "ng build --aot --prod --build-optimizer --vendor-chunk --source-map=false",
-    "build:prod": "ng build --aot --prod --build-optimizer --vendor-chunk --source-map=false --deploy-url=https://miguelsmuller.github.io/site-sme-rc/ --base-href=/site-sme-rc/",
+    "build": "ng build",
+    "build:prod:local": "npm run process-env && ng build --configuration=local",
+    "build:prod:live": "npm run process-env && ng build --configuration=live",
+    "process-env": "ts-node ./env.ts",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install",
+    "check-update": "npx npm-check-updates"
   },
   "private": true,
   "dependencies": {
@@ -49,8 +52,10 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
-    "ts-node": "~7.0.0",
+    "ts-node": "~10.4.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "colors": "~1.4.0",
+    "dotenv": "~10.0.0"
   }
 }

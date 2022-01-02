@@ -1,8 +1,8 @@
 # **Site - Secretaria de Educação de Rio Claro**
-![Code quality](https://img.shields.io/scrutinizer/quality/g/miguelsmuller/site-sme-rc/master?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/miguelsmuller/site-sme-rc?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/miguelsmuller/site-sme-rc?style=flat-square)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/site-sme-rc/master?style=flat-square)
+![Code quality](https://img.shields.io/scrutinizer/quality/g/miguelsmuller/site-secretaria-educacao-rioclaro/master?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/miguelsmuller/site-secretaria-educacao-rioclaro?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/miguelsmuller/site-secretaria-educacao-rioclaro?style=flat-square)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/site-secretaria-educacao-rioclaro/master?style=flat-square)
 
 ## **Overview**
 - Feature 1
@@ -10,8 +10,8 @@
 - Feature 3
 - [Need to be listed]
 
-| <a href="https://miguelsmuller.github.io/site-sme-rc/" target="_blank">Visit Demonstration</a>|
-|:---------------------------------------------------------------------------------------------:|
+| <a href="https://secretaria-educacao-rioclaro.web.app/" target="_blank">See Demonstration</a>|
+|:----------------------------------------------------------------------------------------------:|
 
 <br/>
   
@@ -30,21 +30,24 @@ In the first execution of the project, it is **essential** to create the environ
 
 <br/>
 
-## **Project Structure**  
-```
-src/                         project source code
-|- app/                      app components
-|  |- app.component.*        app root component (shell)
-|  |- app.module.ts          app root module definition
-|  |- app-routing.module.ts  app routes
-|  +- ...                    additional modules and components
-|- assets/                   app assets (images, fonts, sounds...)
-|- environments/             values for various build environments
-|- theme/                    app global scss variables and theme
-|- index.html                html entry point
-|- main.scss                 global style entry point
-|- main.ts                   app entry point
-```
+## **Project Requirements**  
+Make sure that you also have **[NodeJS](https://nodejs.org/)** and **[NPM](https://www.npmjs.com/)** installed on your computer.
+- `$ node --version` and `$ npm --version`
+
+<br/>
+
+**Install dependencies** of project with:  
+- `$ npm install`
+
+<br/>
+
+**Angular Cli** is already part of the development dependencies, so any cli functionality can be used with the prefix npx.
+
+- `$ npx ng serve`
+
+<br/>
+
+**First Execution - Environment files**: In the first execution of the project, it is **essential** to create the environment files (_environment.ts_) in _/src/environments_ according to the model that follows inside the folder (_environment.exp.ts_).
 
 <br/>
 
@@ -62,7 +65,7 @@ src/                         project source code
 <br/>
 
 ## **Deploy**  
-**[GITHUB ACTIONS](https://github.com/miguelsmuller/site-sme-rc/actions/workflows/push-to-gh-pages.yml)** - To deploy to a demonstration of project hosted in GitHub Pages.
+**[GITHUB ACTIONS](https://github.com/miguelsmuller/site-secretaria-educacao-rioclaro/actions/workflows/push-to-gh-pages.yml)** - To deploy to a demonstration of project hosted in GitHub Pages.
 
 <br/>
 

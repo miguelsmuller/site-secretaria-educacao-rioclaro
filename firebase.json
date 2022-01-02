@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "secretaria-educacao-rioclaro",
+    "public": "dist/site-secretaria-educacao-rioclaro",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
