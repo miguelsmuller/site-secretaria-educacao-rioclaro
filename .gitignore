@@ -48,3 +48,5 @@ Thumbs.db
 .env
 /src/environments/**
 !/src/environments/environment.exp.ts
+
+.angular
